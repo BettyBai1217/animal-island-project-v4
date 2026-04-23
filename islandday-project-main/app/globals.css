@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+:root {
+  --font-ac-body: "华康新综艺体W9", "DFPZongYiW9-GB", "HuaKangXinZongYiW9", var(--font-nunito), sans-serif;
+  --font-ac-name: "方正兰亭圆_粗", "FZLanTingYuan-B-GBK", "FZLanTingYuan-B", var(--font-nunito), sans-serif;
+}
+
+body {
+  font-family: var(--font-ac-body);
+  cursor: url('/ac-cursor.svg') 12 4, auto;
+}
+
+.font-name {
+  font-family: var(--font-ac-name) !important;
+}
+
+a, button, [role="button"], input, select, textarea, .cursor-pointer {
+  cursor: url('/ac-cursor.svg') 12 4, pointer !important;
+}
+
+/* Ensure Framer Motion and touch elements also use the cursor */
+div, span, p, h1, h2, h3, h4, h5, h6 {
+  cursor: inherit;
+}
